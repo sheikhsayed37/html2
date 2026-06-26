@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Validation</title>
+
+```
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet">
+```
+
+</head>
+
+<body>
+
+<form class="m-5 p-5">
+
+```
+<div class="mb-3">
+    <label class="form-label">Enter Email</label>
+    <input type="text" class="form-control" id="email">
+</div>
+
+<div class="mb-3">
+    <label class="form-label">Enter Password</label>
+    <input type="password" class="form-control" id="password">
+</div>
+
+<button type="button" onclick="validate()" class="btn btn-primary">
+    Login
+</button>
+```
+
+</form>
+
+<div class="ms-5">
+    <h2 id="outputMessage"></h2>
+</div>
+
+<script>
+
+function validate() {
+
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
+
+    let fixedEmail = "admin@gmail.com";
+    let fixedPassword = "123456";
+
+    if(email == fixedEmail && password == fixedPassword)
+    {
+        document.getElementById("outputMessage").innerText =
+        "Login Successful";
+    }
+    else
+    {
+        document.getElementById("outputMessage").innerText =
+        "Invalid Email or Password";
+    }
+}
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

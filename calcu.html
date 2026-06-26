@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+</head>
+
+<body>
+
+<form class="m-5 p-5">
+    
+    <div class="mb-3">
+        <label class="form-label">Enter Number 1</label>
+        <input type="text" class="form-control" id="num1">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Enter Number 2</label>
+        <input type="text" class="form-control" id="num2">
+    </div>
+
+    <button type="button" onclick="sum()" class="btn btn-primary">+</button>
+
+    <button type="button" onclick="substract()" class="btn btn-danger">-</button>
+
+    <button type="button" onclick="multiply()" class="btn btn-success">*</button>
+
+    <button type="button" onclick="divide()" class="btn btn-warning">/</button>
+
+    <button type="button" onclick="clearAll()" class="btn btn-dark">AC</button>
+
+</form>
+
+<div class="ms-5">
+    <h2 id="outputMessage"></h2>
+</div>
+
+<script>
+
+    function sum() {
+        let number1 = parseFloat(document.getElementById("num1").value);
+        let number2 = parseFloat(document.getElementById("num2").value);
+
+        let result = number1 + number2;
+
+        document.getElementById("outputMessage").innerText =
+            "Sum = " + result;
+    }
+
+    function substract() {
+        let number1 = parseFloat(document.getElementById("num1").value);
+        let number2 = parseFloat(document.getElementById("num2").value);
+
+        let result = number1 - number2;
+
+        document.getElementById("outputMessage").innerText =
+            "Difference = " + result;
+    }
+
+    function multiply() {
+        let number1 = parseFloat(document.getElementById("num1").value);
+        let number2 = parseFloat(document.getElementById("num2").value);
+
+        let result = number1 * number2;
+
+        document.getElementById("outputMessage").innerText =
+            "Product = " + result;
+    }
+
+    function divide() {
+        let number1 = parseFloat(document.getElementById("num1").value);
+        let number2 = parseFloat(document.getElementById("num2").value);
+
+        if (number2 === 0) {
+            document.getElementById("outputMessage").innerText =
+                "Cannot divide by zero!";
+            return;
+        }
+
+        let result = number1 / number2;
+
+        document.getElementById("outputMessage").innerText =
+            "Division = " + result;
+    }
+
+    function clearAll() {
+        document.getElementById("num1").value = "";
+        document.getElementById("num2").value = "";
+        document.getElementById("outputMessage").innerText = "";
+    }
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

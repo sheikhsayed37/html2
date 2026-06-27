@@ -1,0 +1,117 @@
+
+
+/* navbar */
+
+.fah{
+    display: flex;
+    justify-content: space-between;
+   
+    background-color: bisque;
+    padding: 20px 35px;
+}
+
+.fah h1{
+    font-size: 40px;
+}
+
+.fahh{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.fahh a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+/* hero section */
+
+.fahhh{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e9e9e9;
+    padding: 70px 45px;
+    gap: 40px;
+}
+
+.fa{
+    width: 50%;
+}
+
+.fa h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.fa p{
+    font-size: 22px;
+    line-height: 35px;
+}
+
+.f{
+    width: 40%;
+}
+
+.f img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* about title */
+
+.about{
+    text-align: center;
+    font-size: 50px;
+    margin: 40px 0;
+}
+
+/* box section */
+
+.box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: bisque;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.box h1{
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.box p{
+    font-size: 22px;
+}
+
+/* contact section */
+
+.contact{
+    background-color: bisque;
+    text-align: center;
+    padding: 60px;
+    margin-top: 20px;
+}
+
+.contact h1{
+    font-size: 50px;
+}
+.saiff{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+    font-size: 22px;
+    text-align: left;
+}
+
+.saiff ul{
+    list-style: none;
+}
+
+.saiff li{
+    margin-bottom: 10px;
+}

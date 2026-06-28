@@ -19,7 +19,8 @@
 </div>
 
 <script>
-function checklogin() {
+function checklogin()
+ {
 
     let email = document.getElementById("Email").value;
     let password = document.getElementById("Password").value;
@@ -31,6 +32,8 @@ function checklogin() {
         window.location.href = "homebody.html";
     }
     else {
+
+        
         document.getElementById("result").innerHTML =
         "Login Unsuccessful";
     }
